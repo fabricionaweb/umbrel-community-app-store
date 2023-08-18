@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: autobrr_web_1
+      APP_HOST: sparkles-autobrr_web_1
       APP_PORT: 7474
       PROXY_AUTH_ADD: "false"
 
