@@ -3,13 +3,15 @@ id: sparkles-autobrr
 category: media
 name: autobrr
 version: "1.28.0"
-tagline: Modern, easy to use download automation for torrents and usenet.
+tagline: Modern, easy to use download automation for torrents and usenet
 description: >-
   Many indexers announce new torrents on their IRC channels the second it is uploaded to the site.
 
+
   autobrr monitors such channels in real time and grabs the torrent file as soon as it's uploaded based on certain conditions that you set up within autobrr.
 
-  It then sends that torrent file to a download client of your choice. A download client can be anything from qBittorrent, Deluge, SABnzbd, Radarr, Sonarr, watch folder, etc.
+
+  It then sends that torrent file to a download client of your choice. A download client can be anything from qBittorrent, Deluge, Radarr, Sonarr, watch folder, and more.
 developer: autobrr
 website: https://autobrr.com/
 dependencies: []
@@ -23,6 +25,3 @@ gallery:
 path: ""
 defaultUsername: ""
 defaultPassword: ""
-torOnly: false
-submitter: Fabricio Silva
-submission: https://github.com/getumbrel/umbrel-apps/pull/673
