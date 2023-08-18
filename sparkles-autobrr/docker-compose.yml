@@ -14,6 +14,3 @@ services:
     user: "1000:1000"
     volumes:
       - ${APP_DATA_DIR}/config:/config
-    environment:
-      AUTOBRR__PORT: 7474
-      AUTOBRR__HOST: "0.0.0.0"
