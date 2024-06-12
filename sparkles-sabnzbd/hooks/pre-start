@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Create config file before app starts, the values will be merged during setup
+CONFIG_FILE="${APP_DATA_DIR}/data/config/sabnzbd.ini"
+
+if [[ ! -f "${CONFIG_FILE}" ]]; then
+
+  echo "App: SABnzbd - Creating config file"
+  echo "App: SABnzbd - APP_HOST: ${APP_HOST}"
+  echo "App: SABnzbd - DEVICE_DOMAIN_NAME: ${DEVICE_DOMAIN_NAME}"
+
+  cat <<EOF >"${CONFIG_FILE}"
+[misc]
+download_dir = /incomplete-downloads
+complete_dir = /downloads
+host_whitelist = ${DEVICE_DOMAIN_NAME}, ${APP_HOST}
+EOF
+fi
