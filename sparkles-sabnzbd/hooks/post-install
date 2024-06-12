@@ -13,8 +13,8 @@ if [[ ! -f "${CONFIG_FILE}" ]]; then
 
   cat <<EOF >"${CONFIG_FILE}"
 [misc]
-download_dir = /incomplete-downloads
-complete_dir = /downloads
+download_dir = /downloads/incomplete
+complete_dir = /downloads/complete
 host_whitelist = ${DEVICE_DOMAIN_NAME}, ${APP_HOST}
 EOF
 fi
