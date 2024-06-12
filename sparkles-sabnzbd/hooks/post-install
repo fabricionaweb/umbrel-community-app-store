@@ -4,7 +4,7 @@
 
 CONFIG_FILE="${APP_DATA_DIR}/data/config/sabnzbd.ini"
 DEVICE_DOMAIN_NAME="${DEVICE_DOMAIN_NAME:-"umbrel.local"}"
-APP_HOST="${APP_HOST:-"sabnzbd_web_1"}"
+APP_HOST="${APP_HOST:-"sparkles-sabnzbd_web_1"}"
 
 if [[ ! -f "${CONFIG_FILE}" ]]; then
   echo "App: SABnzbd - Creating config file"
