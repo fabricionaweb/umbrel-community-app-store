@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: sparkles-sabnzbd_web_1
+      APP_PORT: 8080
+      PROXY_AUTH_WHITELIST: "/api*"
+
+  web:
+    image: linuxserver/sabnzbd:4.3.2@sha256:6c25ce4614035d6e25736a2fc30a7087b95f4dbae64933eb113a8e2f081bea4a
+    restart: unless-stopped
+    stop_grace_period: 1m
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+      - ${UMBREL_ROOT}/data/storage/downloads:/downloads
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      # - DEVICE_DOMAIN_NAME=${DEVICE_DOMAIN_NAME}
