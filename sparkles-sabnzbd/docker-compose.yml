@@ -17,5 +17,3 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - APP_HOST=sparkles-sabnzbd_web_1
-      - DEVICE_DOMAIN_NAME=${DEVICE_DOMAIN_NAME}
